@@ -1,17 +1,11 @@
 #include "sim.h"
 
-#define PIXEL_SIZE 4
+#define PIXEL_SIZE 8
 #define X_SIZE SIM_X_SIZE / PIXEL_SIZE
 #define Y_SIZE SIM_Y_SIZE / PIXEL_SIZE
 #define ADDED_HEIGH 64
 #define COLOR_MAX_HEIGH 512
 #define MIN_RED 64
-
-int field[X_SIZE][Y_SIZE] = {0};
-int field_copy[X_SIZE][Y_SIZE] = {0};
-
-const int dirs_x[4] = {-1, 0, 1, 0};
-const int dirs_y[4] = {0, -1, 0, 1};
 
 int getX(int pos) {
   return (pos >> 16) / PIXEL_SIZE;
@@ -36,7 +30,11 @@ int calcColor(int heigh) {
   return 0xFF000000 | (red << 16);
 }
 
-void simulate() {
+void simulate(int field[X_SIZE][Y_SIZE]) {
+  const int dirs_x[4] = {-1, 0, 1, 0};
+  const int dirs_y[4] = {0, -1, 0, 1};
+  int field_copy[X_SIZE][Y_SIZE] = {0};
+
   for(int x = 0; x < X_SIZE; ++x) {
     for(int y = 0; y < Y_SIZE; ++y) {
       field_copy[x][y] += field[x][y];
@@ -58,24 +56,25 @@ void simulate() {
   for(int x = 0; x < X_SIZE; ++x) {
     for(int y = 0; y < Y_SIZE; ++y) {
       field[x][y] = field_copy[x][y];
-      field_copy[x][y] = 0;
     }
   }
 }
 
-void addSand(int pos) {
+void addSand(int field[X_SIZE][Y_SIZE], int pos) {
   int px = getX(pos);
   int py = getY(pos);
   field[px][py] += ADDED_HEIGH;
 }
 
 void app(void) {
+  int field[X_SIZE][Y_SIZE] = {0};
+
   while(1) {
     while(simHasClick()) {
-      addSand(simGetClick());
+      addSand(field, simGetClick());
     }
 
-    simulate();
+    simulate(field);
 
     for(int x = 0; x < SIM_X_SIZE; ++x) {
       for(int y = 0; y < SIM_Y_SIZE; ++y) {

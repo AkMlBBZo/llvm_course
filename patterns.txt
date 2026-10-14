@@ -1,0 +1,244 @@
+
+===== 1 (uniq: 34) =====
+  60,162,028  call <- phi
+  40,761,364  br <- icmp
+  40,725,689  load <- getelementptr
+  40,124,601  getelementptr <- zext
+  20,684,479  getelementptr <- getelementptr
+  20,396,859  add <- phi
+  20,367,354  icmp <- load
+  20,086,779  icmp <- add
+  20,080,122  lshr <- phi
+  20,080,122  zext <- lshr
+  20,044,474  zext <- load
+     627,205  add <- load
+     626,944  getelementptr <- phi
+     313,992  store <- add
+     313,992  store <- getelementptr
+     313,475  icmp <- phi
+      35,909  getelementptr <- alloca
+       9,536  call <- load
+       9,536  mul <- call
+       9,536  sdiv <- mul
+       9,536  shl <- sdiv
+       9,536  add <- shl
+       9,536  or <- add
+       3,520  getelementptr <- add
+         131  add <- add
+          87  call <- alloca
+          22  icmp <- call
+          10  lshr <- call
+           5  trunc <- lshr
+           5  sdiv <- trunc
+           5  and <- lshr
+           5  sext <- sdiv
+           5  getelementptr <- sext
+           5  zext <- and
+
+===== 2 (uniq: 72) =====
+  40,108,018  call <- phi ; call <- phi
+  40,098,489  getelementptr <- zext ; load <- getelementptr
+  20,367,354  icmp <- load ; br <- icmp
+  20,086,779  add <- phi ; icmp <- add
+  20,083,515  icmp <- add ; br <- icmp
+  20,080,122  lshr <- phi ; zext <- lshr
+  20,054,015  getelementptr <- getelementptr ; getelementptr <- zext
+  20,054,010  zext <- lshr ; getelementptr <- getelementptr
+  20,054,010  load <- getelementptr ; icmp <- load
+  20,054,009  call <- phi ; add <- phi
+  20,053,993  br <- icmp ; lshr <- phi
+  20,044,474  br <- icmp ; zext <- load
+  20,044,474  zext <- load ; getelementptr <- zext
+  20,044,474  load <- getelementptr ; call <- phi
+     620,416  getelementptr <- getelementptr ; getelementptr <- phi
+     620,416  getelementptr <- phi ; load <- getelementptr
+     339,330  br <- icmp ; add <- phi
+     313,992  store <- add ; store <- getelementptr
+     313,861  load <- getelementptr ; add <- load
+     313,861  add <- load ; store <- add
+     313,344  load <- getelementptr ; getelementptr <- getelementptr
+     313,344  add <- load ; add <- load
+     313,344  store <- getelementptr ; icmp <- load
+     310,592  br <- icmp ; getelementptr <- getelementptr
+     310,211  icmp <- phi ; br <- icmp
+     310,080  add <- phi ; icmp <- phi
+      26,112  zext <- lshr ; getelementptr <- alloca
+      26,112  getelementptr <- alloca ; getelementptr <- zext
+      26,112  getelementptr <- zext ; lshr <- phi
+       9,536  br <- icmp ; call <- load
+       9,536  call <- load ; mul <- call
+       9,536  mul <- call ; sdiv <- mul
+       9,536  sdiv <- mul ; shl <- sdiv
+       9,536  shl <- sdiv ; add <- shl
+       9,536  add <- shl ; or <- add
+       9,536  or <- add ; call <- phi
+       6,528  getelementptr <- alloca ; getelementptr <- phi
+       6,528  getelementptr <- getelementptr ; load <- getelementptr
+       3,264  getelementptr <- phi ; getelementptr <- alloca
+       3,264  getelementptr <- phi ; add <- phi
+       3,264  icmp <- add ; getelementptr <- alloca
+       3,264  getelementptr <- alloca ; getelementptr <- add
+       3,264  getelementptr <- add ; icmp <- phi
+       3,264  icmp <- phi ; getelementptr <- getelementptr
+       3,264  getelementptr <- getelementptr ; getelementptr <- getelementptr
+       3,247  br <- icmp ; getelementptr <- alloca
+         256  store <- getelementptr ; add <- phi
+         256  getelementptr <- getelementptr ; getelementptr <- add
+         256  getelementptr <- add ; load <- getelementptr
+         137  br <- icmp ; br <- icmp
+
+===== 3 (uniq: 105) =====
+  20,083,515  add <- phi ; icmp <- add ; br <- icmp
+  20,054,015  getelementptr <- getelementptr ; getelementptr <- zext ; load <- getelementptr
+  20,054,010  lshr <- phi ; zext <- lshr ; getelementptr <- getelementptr
+  20,054,010  zext <- lshr ; getelementptr <- getelementptr ; getelementptr <- zext
+  20,054,010  getelementptr <- zext ; load <- getelementptr ; icmp <- load
+  20,054,010  load <- getelementptr ; icmp <- load ; br <- icmp
+  20,054,009  call <- phi ; call <- phi ; call <- phi
+  20,054,009  call <- phi ; call <- phi ; add <- phi
+  20,054,009  call <- phi ; add <- phi ; icmp <- add
+  20,053,993  icmp <- add ; br <- icmp ; lshr <- phi
+  20,053,993  br <- icmp ; lshr <- phi ; zext <- lshr
+  20,044,474  icmp <- load ; br <- icmp ; zext <- load
+  20,044,474  br <- icmp ; zext <- load ; getelementptr <- zext
+  20,044,474  zext <- load ; getelementptr <- zext ; load <- getelementptr
+  20,044,474  getelementptr <- zext ; load <- getelementptr ; call <- phi
+  20,044,473  load <- getelementptr ; call <- phi ; call <- phi
+     620,416  getelementptr <- getelementptr ; getelementptr <- phi ; load <- getelementptr
+     313,861  add <- load ; store <- add ; store <- getelementptr
+     313,344  load <- getelementptr ; add <- load ; add <- load
+     313,344  add <- load ; add <- load ; store <- add
+     313,344  store <- add ; store <- getelementptr ; icmp <- load
+     313,344  store <- getelementptr ; icmp <- load ; br <- icmp
+     313,213  icmp <- load ; br <- icmp ; add <- phi
+     310,336  getelementptr <- phi ; load <- getelementptr ; add <- load
+     310,211  icmp <- phi ; br <- icmp ; getelementptr <- getelementptr
+     310,080  getelementptr <- phi ; load <- getelementptr ; getelementptr <- getelementptr
+     310,080  load <- getelementptr ; getelementptr <- getelementptr ; getelementptr <- phi
+     310,080  add <- phi ; icmp <- phi ; br <- icmp
+     309,949  br <- icmp ; add <- phi ; icmp <- phi
+     307,072  br <- icmp ; getelementptr <- getelementptr ; getelementptr <- phi
+      29,381  br <- icmp ; add <- phi ; icmp <- add
+      26,112  lshr <- phi ; zext <- lshr ; getelementptr <- alloca
+      26,112  zext <- lshr ; getelementptr <- alloca ; getelementptr <- zext
+      26,112  getelementptr <- alloca ; getelementptr <- zext ; lshr <- phi
+      26,112  getelementptr <- zext ; lshr <- phi ; zext <- lshr
+      26,111  icmp <- add ; br <- icmp ; add <- phi
+       9,536  icmp <- load ; br <- icmp ; call <- load
+       9,536  br <- icmp ; call <- load ; mul <- call
+       9,536  call <- load ; mul <- call ; sdiv <- mul
+       9,536  mul <- call ; sdiv <- mul ; shl <- sdiv
+       9,536  sdiv <- mul ; shl <- sdiv ; add <- shl
+       9,536  shl <- sdiv ; add <- shl ; or <- add
+       9,536  add <- shl ; or <- add ; call <- phi
+       9,536  or <- add ; call <- phi ; call <- phi
+       3,264  getelementptr <- alloca ; getelementptr <- phi ; getelementptr <- alloca
+       3,264  getelementptr <- phi ; getelementptr <- alloca ; getelementptr <- phi
+       3,264  getelementptr <- alloca ; getelementptr <- phi ; add <- phi
+       3,264  getelementptr <- phi ; add <- phi ; icmp <- add
+       3,264  add <- phi ; icmp <- add ; getelementptr <- alloca
+       3,264  icmp <- add ; getelementptr <- alloca ; getelementptr <- add
+
+===== 4 (uniq: 128) =====
+  20,054,010  lshr <- phi ; zext <- lshr ; getelementptr <- getelementptr ; getelementptr <- zext
+  20,054,010  zext <- lshr ; getelementptr <- getelementptr ; getelementptr <- zext ; load <- getelementptr
+  20,054,010  getelementptr <- getelementptr ; getelementptr <- zext ; load <- getelementptr ; icmp <- load
+  20,054,010  getelementptr <- zext ; load <- getelementptr ; icmp <- load ; br <- icmp
+  20,054,009  call <- phi ; call <- phi ; call <- phi ; add <- phi
+  20,054,009  call <- phi ; call <- phi ; add <- phi ; icmp <- add
+  20,054,009  call <- phi ; add <- phi ; icmp <- add ; br <- icmp
+  20,053,993  add <- phi ; icmp <- add ; br <- icmp ; lshr <- phi
+  20,053,993  icmp <- add ; br <- icmp ; lshr <- phi ; zext <- lshr
+  20,044,474  load <- getelementptr ; icmp <- load ; br <- icmp ; zext <- load
+  20,044,474  icmp <- load ; br <- icmp ; zext <- load ; getelementptr <- zext
+  20,044,474  br <- icmp ; zext <- load ; getelementptr <- zext ; load <- getelementptr
+  20,044,474  zext <- load ; getelementptr <- zext ; load <- getelementptr ; call <- phi
+  20,044,473  getelementptr <- zext ; load <- getelementptr ; call <- phi ; call <- phi
+  20,044,473  load <- getelementptr ; call <- phi ; call <- phi ; call <- phi
+  20,027,898  br <- icmp ; lshr <- phi ; zext <- lshr ; getelementptr <- getelementptr
+     313,344  load <- getelementptr ; add <- load ; add <- load ; store <- add
+     313,344  add <- load ; add <- load ; store <- add ; store <- getelementptr
+     313,344  add <- load ; store <- add ; store <- getelementptr ; icmp <- load
+     313,344  store <- add ; store <- getelementptr ; icmp <- load ; br <- icmp
+     313,213  store <- getelementptr ; icmp <- load ; br <- icmp ; add <- phi
+     310,336  getelementptr <- getelementptr ; getelementptr <- phi ; load <- getelementptr ; add <- load
+     310,080  getelementptr <- getelementptr ; getelementptr <- phi ; load <- getelementptr ; getelementptr <- getelementptr
+     310,080  getelementptr <- phi ; load <- getelementptr ; getelementptr <- getelementptr ; getelementptr <- phi
+     310,080  load <- getelementptr ; getelementptr <- getelementptr ; getelementptr <- phi ; load <- getelementptr
+     310,080  getelementptr <- phi ; load <- getelementptr ; add <- load ; add <- load
+     310,080  add <- phi ; icmp <- phi ; br <- icmp ; getelementptr <- getelementptr
+     309,949  icmp <- load ; br <- icmp ; add <- phi ; icmp <- phi
+     309,949  br <- icmp ; add <- phi ; icmp <- phi ; br <- icmp
+     307,072  br <- icmp ; getelementptr <- getelementptr ; getelementptr <- phi ; load <- getelementptr
+     306,816  icmp <- phi ; br <- icmp ; getelementptr <- getelementptr ; getelementptr <- phi
+      29,381  br <- icmp ; add <- phi ; icmp <- add ; br <- icmp
+      26,112  lshr <- phi ; zext <- lshr ; getelementptr <- alloca ; getelementptr <- zext
+      26,112  zext <- lshr ; getelementptr <- alloca ; getelementptr <- zext ; lshr <- phi
+      26,112  getelementptr <- alloca ; getelementptr <- zext ; lshr <- phi ; zext <- lshr
+      26,112  getelementptr <- zext ; lshr <- phi ; zext <- lshr ; getelementptr <- getelementptr
+      26,111  add <- phi ; icmp <- add ; br <- icmp ; add <- phi
+      26,111  icmp <- add ; br <- icmp ; add <- phi ; icmp <- add
+      26,095  br <- icmp ; lshr <- phi ; zext <- lshr ; getelementptr <- alloca
+       9,536  load <- getelementptr ; icmp <- load ; br <- icmp ; call <- load
+       9,536  icmp <- load ; br <- icmp ; call <- load ; mul <- call
+       9,536  br <- icmp ; call <- load ; mul <- call ; sdiv <- mul
+       9,536  call <- load ; mul <- call ; sdiv <- mul ; shl <- sdiv
+       9,536  mul <- call ; sdiv <- mul ; shl <- sdiv ; add <- shl
+       9,536  sdiv <- mul ; shl <- sdiv ; add <- shl ; or <- add
+       9,536  shl <- sdiv ; add <- shl ; or <- add ; call <- phi
+       9,536  add <- shl ; or <- add ; call <- phi ; call <- phi
+       9,536  or <- add ; call <- phi ; call <- phi ; call <- phi
+       3,264  getelementptr <- alloca ; getelementptr <- phi ; getelementptr <- alloca ; getelementptr <- phi
+       3,264  getelementptr <- phi ; getelementptr <- alloca ; getelementptr <- phi ; add <- phi
+
+===== 5 (uniq: 149) =====
+  20,054,010  lshr <- phi ; zext <- lshr ; getelementptr <- getelementptr ; getelementptr <- zext ; load <- getelementptr
+  20,054,010  zext <- lshr ; getelementptr <- getelementptr ; getelementptr <- zext ; load <- getelementptr ; icmp <- load
+  20,054,010  getelementptr <- getelementptr ; getelementptr <- zext ; load <- getelementptr ; icmp <- load ; br <- icmp
+  20,054,009  call <- phi ; call <- phi ; call <- phi ; add <- phi ; icmp <- add
+  20,054,009  call <- phi ; call <- phi ; add <- phi ; icmp <- add ; br <- icmp
+  20,053,993  add <- phi ; icmp <- add ; br <- icmp ; lshr <- phi ; zext <- lshr
+  20,044,474  getelementptr <- zext ; load <- getelementptr ; icmp <- load ; br <- icmp ; zext <- load
+  20,044,474  load <- getelementptr ; icmp <- load ; br <- icmp ; zext <- load ; getelementptr <- zext
+  20,044,474  icmp <- load ; br <- icmp ; zext <- load ; getelementptr <- zext ; load <- getelementptr
+  20,044,474  br <- icmp ; zext <- load ; getelementptr <- zext ; load <- getelementptr ; call <- phi
+  20,044,473  zext <- load ; getelementptr <- zext ; load <- getelementptr ; call <- phi ; call <- phi
+  20,044,473  getelementptr <- zext ; load <- getelementptr ; call <- phi ; call <- phi ; call <- phi
+  20,044,473  load <- getelementptr ; call <- phi ; call <- phi ; call <- phi ; add <- phi
+  20,027,898  call <- phi ; add <- phi ; icmp <- add ; br <- icmp ; lshr <- phi
+  20,027,898  icmp <- add ; br <- icmp ; lshr <- phi ; zext <- lshr ; getelementptr <- getelementptr
+  20,027,898  br <- icmp ; lshr <- phi ; zext <- lshr ; getelementptr <- getelementptr ; getelementptr <- zext
+     313,344  load <- getelementptr ; add <- load ; add <- load ; store <- add ; store <- getelementptr
+     313,344  add <- load ; add <- load ; store <- add ; store <- getelementptr ; icmp <- load
+     313,344  add <- load ; store <- add ; store <- getelementptr ; icmp <- load ; br <- icmp
+     313,213  store <- add ; store <- getelementptr ; icmp <- load ; br <- icmp ; add <- phi
+     310,080  getelementptr <- getelementptr ; getelementptr <- phi ; load <- getelementptr ; getelementptr <- getelementptr ; getelementptr <- phi
+     310,080  getelementptr <- phi ; load <- getelementptr ; getelementptr <- getelementptr ; getelementptr <- phi ; load <- getelementptr
+     310,080  load <- getelementptr ; getelementptr <- getelementptr ; getelementptr <- phi ; load <- getelementptr ; add <- load
+     310,080  getelementptr <- getelementptr ; getelementptr <- phi ; load <- getelementptr ; add <- load ; add <- load
+     310,080  getelementptr <- phi ; load <- getelementptr ; add <- load ; add <- load ; store <- add
+     309,949  store <- getelementptr ; icmp <- load ; br <- icmp ; add <- phi ; icmp <- phi
+     309,949  icmp <- load ; br <- icmp ; add <- phi ; icmp <- phi ; br <- icmp
+     309,949  br <- icmp ; add <- phi ; icmp <- phi ; br <- icmp ; getelementptr <- getelementptr
+     306,816  icmp <- phi ; br <- icmp ; getelementptr <- getelementptr ; getelementptr <- phi ; load <- getelementptr
+     306,816  br <- icmp ; getelementptr <- getelementptr ; getelementptr <- phi ; load <- getelementptr ; getelementptr <- getelementptr
+     306,685  add <- phi ; icmp <- phi ; br <- icmp ; getelementptr <- getelementptr ; getelementptr <- phi
+      26,112  lshr <- phi ; zext <- lshr ; getelementptr <- alloca ; getelementptr <- zext ; lshr <- phi
+      26,112  zext <- lshr ; getelementptr <- alloca ; getelementptr <- zext ; lshr <- phi ; zext <- lshr
+      26,112  getelementptr <- alloca ; getelementptr <- zext ; lshr <- phi ; zext <- lshr ; getelementptr <- getelementptr
+      26,112  getelementptr <- zext ; lshr <- phi ; zext <- lshr ; getelementptr <- getelementptr ; getelementptr <- zext
+      26,111  call <- phi ; add <- phi ; icmp <- add ; br <- icmp ; add <- phi
+      26,111  add <- phi ; icmp <- add ; br <- icmp ; add <- phi ; icmp <- add
+      26,111  icmp <- add ; br <- icmp ; add <- phi ; icmp <- add ; br <- icmp
+      26,095  br <- icmp ; add <- phi ; icmp <- add ; br <- icmp ; lshr <- phi
+      26,095  icmp <- add ; br <- icmp ; lshr <- phi ; zext <- lshr ; getelementptr <- alloca
+      26,095  br <- icmp ; lshr <- phi ; zext <- lshr ; getelementptr <- alloca ; getelementptr <- zext
+       9,536  getelementptr <- zext ; load <- getelementptr ; icmp <- load ; br <- icmp ; call <- load
+       9,536  load <- getelementptr ; icmp <- load ; br <- icmp ; call <- load ; mul <- call
+       9,536  icmp <- load ; br <- icmp ; call <- load ; mul <- call ; sdiv <- mul
+       9,536  br <- icmp ; call <- load ; mul <- call ; sdiv <- mul ; shl <- sdiv
+       9,536  call <- load ; mul <- call ; sdiv <- mul ; shl <- sdiv ; add <- shl
+       9,536  mul <- call ; sdiv <- mul ; shl <- sdiv ; add <- shl ; or <- add
+       9,536  sdiv <- mul ; shl <- sdiv ; add <- shl ; or <- add ; call <- phi
+       9,536  shl <- sdiv ; add <- shl ; or <- add ; call <- phi ; call <- phi
+       9,536  add <- shl ; or <- add ; call <- phi ; call <- phi ; call <- phi

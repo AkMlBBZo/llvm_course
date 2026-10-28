@@ -32,3 +32,9 @@ clang  -O2 app.o sim.c start.c log.c -lSDL2 -o app-traced
 ```
 python3 analyze.py log.txt --top 50 -o patterns.txt
 ```
+
+## IRGen
+```bash
+clang++ $(llvm-config --cppflags --ldflags --libs) \
+  sim.c IRGen/app_ir_gen.cpp -lSDL2 -o ir_generator
+```
